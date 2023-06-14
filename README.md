@@ -44,11 +44,10 @@ CREATE TABLE clientes (
   email VARCHAR(100) NOT NULL,
   phone1 VARCHAR(20) NOT NULL,
   phone2 VARCHAR(20),
-  street VARCHAR(100) NOT NULL,
+  address VARCHAR(100) NOT NULL,
   city VARCHAR(100) NOT NULL,
-  estate VARCHAR(50) NOT NULL,
+  state VARCHAR(50) NOT NULL,
   zipCode VARCHAR(10) NOT NULL,
-  number INT NOT NULL,
   representative_id INT,
   FOREIGN KEY (representante_id) REFERENCES representantes (id)
 );
